@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:smarket/tools/Store.dart';
 import 'favourites.dart';
 import 'messeges.dart';
 import 'cart.dart';
@@ -53,7 +54,34 @@ class _MyHomePageState extends State<MyHomePage> {
 )        ],
       ),
       body: new Center(
-        child: Text("My Store ",style:new TextStyle(fontSize: 25.0)),
+                child: new Column(
+                  children: <Widget>[
+                    new Flexible(child: new GridView.builder(
+                         gridDelegate:new SliverGridDelegateWithFixedCrossAxisCount(
+                             crossAxisCount: 2),
+                          itemCount: storeItems.length,
+                            itemBuilder: (BuildContext context, int index) {
+                           return new Card(
+                             child: new Stack(
+                               alignment: FractionalOffset.bottomCenter,
+                               children: <Widget>[
+                                 new Row(
+                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                   children: <Widget>[
+                                     new Text(storeItems[index].itemName,
+                                       style: new TextStyle(fontWeight: FontWeight.w700,fontSize: 16.0),),
+                                     new Text("Ksh${storeItems[index].itemPrice}",style: new TextStyle(
+                                       color: Colors.red
+                                     ),),
+
+                                   ],
+                                 )
+                               ],
+                             ),
+                           );
+        },  )
+                    )],
+                ),
       ),
       floatingActionButton: Stack(
         alignment: Alignment.topLeft,
