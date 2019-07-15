@@ -65,11 +65,22 @@ class _MyHomePageState extends State<MyHomePage> {
                              child: new Stack(
                                alignment: FractionalOffset.bottomCenter,
                                children: <Widget>[
+                                 new Container(
+                                    decoration: new BoxDecoration(
+                                     image: new DecorationImage(
+                                         image: new NetworkImage(
+                                             storeItems[index].itemImage)),
+                                   ),
+                                 ),
+                                 new Container(
+                                   height: 25.0,
+                                   color: Colors.black.withAlpha(100)
+                                 ),
                                  new Row(
                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                    children: <Widget>[
                                      new Text(storeItems[index].itemName,
-                                       style: new TextStyle(fontWeight: FontWeight.w700,fontSize: 16.0),),
+                                       style: new TextStyle(fontWeight: FontWeight.w700,fontSize: 16.0,color:Colors.white ),),
                                      new Text("Ksh${storeItems[index].itemPrice}",style: new TextStyle(
                                        color: Colors.red
                                      ),),
