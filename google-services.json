@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "68929876279",
+    "firebase_url": "https://smarket-192b9.firebaseio.com",
+    "project_id": "smarket-192b9",
+    "storage_bucket": "smarket-192b9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:68929876279:android:dc067b129b6c29d0",
+        "android_client_info": {
+          "package_name": "com.david.smarket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "68929876279-a7rjrmfvpl04rgkksn3gf0s4msndfhe4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.david.smarket",
+            "certificate_hash": "9f35283a2c188858890567bd04541930051a16de"
+          }
+        },
+        {
+          "client_id": "68929876279-07bibcq5quhce43r7pk8cdfprhqepj2j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBI-tZay83kqhZmCP2w527lYk1xTcR7IP0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "68929876279-07bibcq5quhce43r7pk8cdfprhqepj2j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
