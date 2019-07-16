@@ -10,6 +10,7 @@ import 'profile.dart';
 import 'delivery.dart';
 import 'aboutUs.dart';
 import 'logout.dart';
+import 'itemdetails.dart';
 
 class MyHomePage extends StatefulWidget {
   @override
@@ -61,34 +62,45 @@ class _MyHomePageState extends State<MyHomePage> {
                              crossAxisCount: 2),
                           itemCount: storeItems.length,
                             itemBuilder: (BuildContext context, int index) {
-                           return new Card(
-                             child: new Stack(
-                               alignment: FractionalOffset.bottomCenter,
-                               children: <Widget>[
-                                 new Container(
-                                    decoration: new BoxDecoration(
-                                     image: new DecorationImage(
-                                         image: new NetworkImage(
-                                             storeItems[index].itemImage)),
+                           return new GestureDetector(
+                             onTap: () {
+                               Navigator.of(context).push(MaterialPageRoute(builder: (context) => new SmItemDetails(
+                                 itemImage: storeItems[index].itemImage,
+                                 itemName: storeItems[index].itemName,
+                                 itemPrice: storeItems[index].itemPrice,
+                                 itemRating: storeItems[index].itemRating,
+                               )));
+                             },
+                             child: new Card(
+                               child: new Stack(
+                                 alignment: FractionalOffset.bottomCenter,
+                                 children: <Widget>[
+                                   new Container(
+                                     decoration: new BoxDecoration(
+                                       image: new DecorationImage(
+                                           image: new NetworkImage(
+                                               storeItems[index].itemImage)),
+                                     ),
                                    ),
-                                 ),
-                                 new Container(
-                                   height: 25.0,
-                                   color: Colors.black.withAlpha(100)
-                                 ),
-                                 new Row(
-                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                   children: <Widget>[
-                                     new Text(storeItems[index].itemName,
-                                       style: new TextStyle(fontWeight: FontWeight.w700,fontSize: 16.0,color:Colors.white ),),
-                                     new Text("Ksh${storeItems[index].itemPrice}",style: new TextStyle(
-                                       color: Colors.red
-                                     ),),
+                                   new Container(
+                                       height: 25.0,
+                                       color: Colors.black.withAlpha(100)
+                                   ),
+                                   new Row(
+                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                     children: <Widget>[
+                                       new Text(storeItems[index].itemName,
+                                         style: new TextStyle(fontWeight: FontWeight.w700,fontSize: 16.0,color:Colors.white ),),
+                                       new Text("Ksh${storeItems[index].itemPrice}",style: new TextStyle(
+                                           color: Colors.red
+                                       ),),
 
-                                   ],
-                                 )
-                               ],
+                                     ],
+                                   )
+                                 ],
+                               ),
                              ),
+
                            );
         },  )
                     )],
