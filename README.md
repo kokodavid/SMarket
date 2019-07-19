@@ -1,5 +1,5 @@
 ## NAME OF THE PROJECT
-GOALBOX SPORTS
+SMARKET
 
 
 <a href="url"><img src=app/src/main/res/drawable/firstpage.png align="left" height="600" width="300" ></a>
@@ -10,14 +10,14 @@ GOALBOX SPORTS
 
 
 ## DESCRIPTION
-The GOALBOX SPORTS application is the most convinient application to be used when one needs to stay updated with their favourite football teams and also their Rivals .
-The GOALBOX SPORTS app also has the most convinient and best user experience.
+The SMarket application is an e-commerce application developed to cater for your shopping needs from local stores.How it works,you login to your account and shop
+normally by adding what you need to your cart and finish by purchasing them then the products are delivered to your doorstep.
 
 ## TECHNOLOGIES USED
 The app uses the following technologies
  <ol>
-    <li>Java</li>
-    <li>Android</li>
+    <li>Flutter</li>
+    <li>Dart</li>
 
   </ol>
 
