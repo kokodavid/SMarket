@@ -2,12 +2,6 @@
 SMARKET
 
 
-<a href="url"><img src=assets/images/first.png align="left" height="600" width="300" ></a>
-<a href="url"><img src=app/src/main/res/drawable/secondpage.png align="right" height="600" width="300" ></a>
-<br></br>
-<a href="url"><img src=app/src/main/res/drawable/four.png align="left" height="600" width="300" ></a>
-<a href="url"><img src=app/src/main/res/drawable/last.png align="right" height="600" width="300" ></a>
-
 
 ## DESCRIPTION
 The SMarket application is an e-commerce application developed to cater for your shopping needs from local stores.How it works,you login to your account and shop
